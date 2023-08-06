@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, nav, main, footer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #88d4eb;
+    background-color: #daf2fa;
+    border-radius: 5px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #16aacf;
+}
+section {
+    margin-top: 30px;
+    padding: 15px;
+    background: #7090e9;
+    border: 1px solid #6e57f0;
+    border-radius: 5px;
+}

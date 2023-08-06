@@ -1,0 +1,486 @@
+* {
+    margin: 0;padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Verdana, sans-serif;
+}
+
+  
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+.sectionWelcome{
+    display: inline-flex;
+}
+
+
+.container{
+    height: auto;
+    width: 100vw;
+    padding: 20px;
+}
+
+/*left image*/
+.sectionWelcomeinnerLeft{
+    width: 15%; 
+    border: solid;
+    background-color: #3670a1;
+    color: #fff;
+    text-align: center;
+}
+.sectionWelcomeinnerLeft .leftimage{
+    width: 90%;
+    height: 90%;
+    /* margin: 8px; */
+    padding: 10px;
+}
+.leftimagecontainer{
+    width: 100%;
+}
+
+
+
+/*slider*/
+.sectionWelcomeinnerMid{
+    border: solid;
+    border-width: 1px;
+    width: 70%;
+    height: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.sectionWelcome {
+  width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: 10px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+/*right image*/
+
+/*left image*/
+.sectionWelcomeinnerRight{
+    width: 15%;
+    border: solid;
+    background-color: #3670a1;
+    color: #fff;
+    text-align: center;
+}
+.RightimageContainer{
+    width: 100%;
+}
+ .Rightimage{
+    width: 90%;
+    height: 90%;
+    /* margin: 8px; */
+    padding: 10px;
+}
+
+
+/*News update section*/
+.NewsUpdateSectionTop{
+    margin-top: 19px;
+    display: flex;
+    /* margin-left: 30px;
+    margin-right: 30px; */
+}
+.NewsUpdateSection1{
+    background-color: #6ea128;
+    padding: 0px 10px 6px 15px;
+    font-size: 40vw;
+    height: 40px;
+    font-size: x-large;
+    color: white;
+    display: flex;
+    width: 20%;
+}
+.NewsUpdateSection1 i{
+    margin-top: auto;
+}
+
+.NewsUpdateSection2{
+    background-color: #3670a1;
+    color: #f2f2f2;
+    padding: 0px 10px 6px 15px;
+    font-size: 18px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    width: 90%;
+    overflow: hidden;
+}
+.NewsUpdateSection2:hover{
+    background-color:#6ea128;
+}
+
+
+/*Whats new section*/
+
+.NewUpdate{
+    display: flex;
+    width: 100%;
+    /* margin-left: 30px; */
+    /* margin-right: 30px; */
+    gap: 40px;
+    margin-top: 10px;
+}
+.whatsNew{
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    width: 60%;
+}
+.whatsNew .whatsNewHead{
+    padding: 9px 15px;
+    background: #3670a1;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    
+}
+.whatsNew .whatsNewFrame{
+    background: #ebecee;
+    width: 100%;
+    
+}
+.whatsNewHeadI{
+    width: 90%;
+}
+.whatsNewButton{
+    width: 10%;
+}
+.whatsNew button{
+    background-image: linear-gradient(to bottom,#5bc0de 0,#2aabd2 100%);
+    border: #2aabd2;
+    border-radius: 2px;
+    height: 30px;
+    color: #ebecee;
+}
+
+
+.whatsNewFrame{
+    background: #ebecee;
+    width: 100%;
+    height: 350px;
+    overflow: auto;
+    text-align:justify;
+}
+.whatsNewFrame .first{
+    background-color: #ebecee;
+    width: 100%;
+    padding: 10px;
+}
+.whatsNewFrame .secnds{
+    background-color: #6ea128;
+    color:#fff ;
+    width: 100%;
+    padding: 10px;
+}
+.whatsNewFrame .third{
+    background-color: #3670a1;
+    width: 100%;
+    color:#fff ;
+    padding: 10px;
+}
+
+.ImportantLinks{
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    
+    width: 40%;
+}
+.ImportantLinks .ImportantLinksHead{
+    padding: 9px 15px;
+    background: #3670a1;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    
+    
+}
+
+
+.ImportantLinksFrame{
+    background: #ebecee;
+    width: 100%;
+    height: 350px;
+    overflow: auto;
+    text-align:justify;
+}
+.ImportantLinksFrame .first{
+    background-color: #ebecee;
+    width: 100%;
+    padding: 10px;
+}
+.ImportantLinksFrame .secnds{
+    background-color: #6ea128;
+    color:#fff ;
+    width: 100%;
+    padding: 10px;
+}
+.ImportantLinksFrame .third{
+    background-color: #3670a1;
+    width: 100%;
+    color:#fff ;
+    padding: 10px;
+}
+
+.bottomCard{
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    display: flex;
+    /* margin: 30px; */
+    
+}
+.bottomCard .bottomCard1{
+    background-color: #6ea128;
+    margin: auto;
+    width: 60%; 
+    height: 35vh;
+    color: #fff;
+    margin: 40px;
+    border-radius: 10px;
+    
+}
+.bottomCard .bottomCard1:hover{
+    background-color: rgb(3, 14, 107);
+    scale: 1.2;
+    transition-duration: 500ms;
+}
+.bottomCard .bottomCard2{
+    background-color: #6a95e4;
+    margin: auto;
+    width: 60%;
+    height: 35vh;
+    color: #fff;
+    margin: 40px;
+    border-radius: 10px;
+    
+}
+.bottomCard .bottomCard2:hover{
+    background-color: rgb(3, 14, 107);
+    scale: 1.2;
+    transition-duration: 500ms;
+}
+
+
+.bottomCard .bottomCard3{
+    background-color: #727CB6;
+    margin: auto;
+    width: 60%;
+    height: 35vh;
+    color: #fff;
+    margin: 40px;
+    border-radius: 10px;
+    
+}
+.bottomCard .bottomCard3:hover{
+    background-color: rgb(3, 14, 107);
+    scale: 1.1;
+    transition-duration: 500ms;
+}
+.bottomCard .img{
+    border: solid white;
+    border-radius: 70px;
+    border-width: 10px;
+    position: absolute;
+    margin-left: -4%;
+    margin-top: 20px;
+}
+
+.bottomCard h3{
+    text-align: center;
+    font-size: small;
+    
+}
+.bottomCard button{
+    text-align: center;
+    margin-left: 50%;
+    border-radius: 20px;
+    height: 30px;
+    width: 50px;
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    margin-top: 30px;
+}
+.bottomCard button:hover{
+    color: pink;
+}
+hr{
+    border-color: orange;
+    width: 80%;
+    border-width: 2px;
+    margin-left: 10%;
+}
+
+
+/*Welcome section*/
+
+@media screen and (max-width:818px){
+    .sectionWelcome{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionWelcomeinnerLeft{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .sectionWelcomeinnerMid{
+        width: 100%;
+        margin-top: 10px;
+
+    }
+    .sectionWelcomeinnerRight{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+
+}
+
+/*News Update*/
+@media screen and (max-width:818px) {
+    .NewsUpdateSectionTop{
+        width: 100%;
+    }
+}
+
+/*new Update*/
+
+@media screen and (max-width:1052px) {
+    .NewsUpdateSection1 i{
+        margin-top: auto;
+        font-size: small;
+    }
+    .NewUpdate{
+        flex-direction: column;
+        width: 100%;
+    }
+    .whatsNew{
+        width: 100%;
+    }
+    .ImportantLinks{
+        width: 100%;
+    }
+}
+
+/*bottom card*/
+
+@media screen and (max-width:1052px) {
+    .bottomCard{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .bottomCard .img{
+        margin-top: 80px;
+        /* font-size: 10px; */
+    }
+    .bottomCard .bottomCard1{
+        width: 100%;
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .bottomCard .bottomCard2{
+        width: 100%;
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .bottomCard .bottomCard3{
+        width: 100%;
+        margin: 0px;
+        margin-top: 10px;
+    }
+    
+}
+
+@media screen and (max-width:621px) {
+    .bottomCard button{
+        margin-left: 50%;
+    }
+    .bottomCard .img{
+        margin: auto;
+    }
+    
+}
+@media screen and (max-width:621px) {
+    .bottomCard .img{
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .bottomCard .img{
+        margin-left: -3%;
+    }
+}
+
+/*container*/
+@media screen and (max-width:803px)  {
+    .container{
+        padding: 0px;
+    }
+}
