@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  
+}
+body{
+  background: url("img/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.head{
+  margin: 0 0;
+  display: flexbox;
+  align-items: center;
+    height: 100px;
+    font-size: 40px;
+    text-align:center;
+    background:linear-gradient(to right, rgba(78, 0, 234, 0) 10%, rgba(250, 254, 2, 0.005) 20%, rgb(243, 9, 32) 91%), linear-gradient(rgba(231, 58, 10, 0.596) 52%, rgb(2, 235, 252) 60%, rgb(225, 2, 184) 61%);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: aman 1000ms ease alternate infinite;
+        transition: all 0.4s ease;
+      }
+      @keyframes aman {
+        0% {
+          background-position: 0 50;
+        }
+        100% {
+          background-position: 50 0;
+        }
+      }
+.section-heading{
+  color: black;
+  font-size: 100px;
+  font-family: serif;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  display: inline-flex;
+  text-align: center;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background: linear-gradient(white 50%, #023e26 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+  opacity:0.6;
+  color: black;
+  
+  }
+.box{
+  height: 300px;
+  width: 300px;
+}
+.box {
+  background-color: #2c7bfe;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+   color: #ffffff;
+  place-items: center;
+  transition: 0.5s;}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin: 1em 0;
+  opacity: 1;
+}
+p {
+  color: black;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.button{
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color:  #4CAF50;
+  padding: 8px 12px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+.button:hover{
+  background-color: #0786d6;
+  transition: 0.4s ease;
+  opacity: 1;
+}
+
+.card:hover {
+  background-position: 0 100%;
+  opacity: 1;
+  background-color: white;
+}
+.card:hover .box {
+  background-color: #ffffff;
+  color: #2c7bfe;
+  opacity: 1;
+}
+.card:hover h3 {
+  color: white;
+  opacity: 1;
+}
+.card:hover p {
+  color: white;
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 3em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
