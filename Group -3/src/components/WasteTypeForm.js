@@ -1,36 +1,37 @@
 import React, { useState, useRef } from 'react';
 import './WasteTypeForm.css'; // Import your CSS file for styling
-import {firestore} from "../Backend/firebase";
-import {addDoc, collection} from "@firebase/firestore";
-
+import { firestore } from "../Backend/firebase";
+import { addDoc, collection } from "@firebase/firestore";
+import { Link } from 'react-router-dom'
 const WasteTypeForm = () => {
 
+  const [certificate, setCertificate] = useState(false);
 
   const messageRef = useRef();
-    const IDRef = useRef();
+  const IDRef = useRef();
 
-    const ref = collection(firestore, "Audit-your-waste"); //used to create collection..
+  const ref = collection(firestore, "Audit-your-waste"); //used to create collection..
 
-    const handleSave = async(e) =>{
-        e.preventDefault();
-        // console.log(messageRef.current.value);
-        let Data = {
-            message : messageRef.current.value,
-            id:IDRef.current.value,
-        }
+  const handleSave = async (e) => {
+    e.preventDefault();
+    // console.log(messageRef.current.value);
+    let Data = {
+      message: messageRef.current.value,
+      id: IDRef.current.value,
+    }
 
-        try{
-            addDoc(ref,Data);
-        }catch(e){
-            console.log(e);
-        }
-    };
-
-
+    try {
+      addDoc(ref, Data);
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
 
 
-  const wasteTypes = ["plastic", "paper", "glass", "metal", "organic", "Dust", "Leather", "Coconut Shell", "Dry Leaves","Rubber" ];
+
+
+  const wasteTypes = ["plastic", "paper", "glass", "metal", "organic", "Dust", "Leather", "Coconut Shell", "Dry Leaves", "Rubber"];
   const [inputValues, setInputValues] = useState({});
   const [summaryText, setSummaryText] = useState('');
 
@@ -73,11 +74,36 @@ const WasteTypeForm = () => {
     `;
 
     setSummaryText(newSummaryText);
+    setCertificate(true);
+
   };
 
   const capitalize = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
+  let certificateStyle = {
+    display: "none",
+
+
+  }
+  if (certificate === true) {
+    certificateStyle = {
+      display: "block",
+      height: "40px",
+      width:"200px",
+      fontSize: "1.1rem",
+      color: "grey",
+      fontWeight: "400",
+      margin:" 10px auto",
+      marginTop: "10px",
+      boxShadow: "1px 1px 5px  grey",
+      border: "none",
+      textAlign :"center",
+      cursor:"pointer"
+    }
+
+  }
+
 
   return (
     <div className="container">
@@ -153,6 +179,8 @@ const WasteTypeForm = () => {
         className="summary"
         dangerouslySetInnerHTML={{ __html: summaryText }}
       />
+      <Link style={certificateStyle} to="/certificate"> Generate Certificate</Link>
+
     </div>
   );
 };
