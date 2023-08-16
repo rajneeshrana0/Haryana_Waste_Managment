@@ -1,0 +1,324 @@
+  /*main body*/
+
+      .mains{
+        /* margin-top: 2rem; */
+        margin: auto;
+      }
+      .mains p{
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-style:italic;
+        text-align: justify;
+        padding: 10px;
+        color: #444181;
+       }
+      
+     
+  /* start slide show*/  
+      /* Position the image container (needed to position the left and right arrows) */
+      /* .containers {
+        position: relative;
+        width: 80%;
+        margin: 30px auto;
+      } */
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+        text-align: center;
+      }
+      
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+      
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: rgb(15, 15, 15);
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(247, 242, 242, 0.8);
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      .numbertext video {
+        vertical-align: middle;
+      }
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 16.66%;
+      }
+      
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+      
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+  
+      /* end slide show*/
+      .frames{
+        display: flex;
+        padding: 20px;
+         
+      }
+      .frames p{
+        font-size: 1rem;
+      }
+      .frames img{
+        border: 2px solid black;
+        padding: 1rem;
+        width: 10rem;
+        height: 17rem;
+      }
+      .Swachh-pledge{
+        color: white;
+        border-radius: 10px;
+      padding: 10px;
+      background-color: rgb(92 199 71);
+      margin: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        
+      text-align: center;
+     }
+     .Pledge-to-segregate{
+      color: white;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: rgb(92 199 71);
+      margin: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+   }
+
+   .school_nav nav{
+    color: white;
+      padding: 20px;
+      background-color: #444181;
+      margin: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      text-align: center;
+      justify-content: space-evenly;
+      }
+   section nav .total3 i{
+    font-size: 20px;
+    }
+    
+  
+    .products {
+      width: 100%;
+      height: 140vh;
+      padding: 15px 0;
+  }
+  .products h1 {
+      color: #444181;
+      text-decoration: solid;
+      font-weight: 700;
+      font-size: 4.2rem;
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      background: linear-gradient(to right, #444181,#ab89d3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  .products .box {
+      width: 100%;
+      height: fit-content;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 25px 25px;
+  }
+  .products .box .card {
+    width: 250px;
+    height: 400px;
+      box-shadow: 0 0 8px #af76f0;
+      border-radius: 5px;
+      text-align: center;
+      padding: 10px 20px;
+      background: #f6f6f6;
+  }
+  
+  .products .box .card .image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .products .box .card .image img {
+      width: 200px;
+      margin: 15px 0;
+      transition: 0.3s;
+      height:200px;
+  }
+  .products .box .card .products_text p {
+      color: #444181;
+      line-height: 21px;
+      margin: 8px 0;
+  }
+  .products .box .card .products_text h3 {
+      margin: 7px 0;
+      text-align: left;
+      color: rgb(92 199 71);
+      text-decoration: solid;
+      font-weight: 800;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      ;
+  }
+  .products .box .card .products_text .products_star {
+      color: orange;
+      margin-bottom: 19px;
+      cursor: pointer;
+  }
+  .products .box .card .products_text .btn {
+      text-decoration: none;
+      padding: 5px 5px;
+      background: linear-gradient(to right, #e961be , #af76f0);
+      color: white;
+      border-radius: 20px;
+      font-size: 15px;
+  }
+          
+      /* multiple pages */
+  
+      .upload h1{
+        text-align: center;
+        color: #444181;
+        margin: 10px;
+        font-weight: 800;
+        font-size: 30px;
+  padding: 10px;
+      }
+  .uploadForm{
+    text-align:center;
+    margin: 10px;
+    padding: 10px;
+    color: #444181;
+  
+  }
+  
+  /* comments likes*/
+  
+  .comments-section {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  .comments-likes{
+    display: flex;
+  }
+  #comments-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #comments-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  /* Styling for the comment form */
+  #comment-form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  #comment-input {
+    flex-grow: 1;
+    padding: 5px;
+  }
+  
+  #comment-input::placeholder {
+    color: #999;
+  }
+  
+  #comment-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #comment-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the likes section */
+  .likes-section {
+    max-width: 200px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  #like-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #like-button:hover {
+    background-color: red;
+  }
+  
+  #like-count {
+    font-size: 18px;
+  }
+  

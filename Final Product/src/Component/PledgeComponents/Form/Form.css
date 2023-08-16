@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+.container {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: url("./bg.png");
+    background-size: cover;
+    align-items: center;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: transparent;
+    color: white;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+form {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.input-name,
+.gender,
+.make_flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.input-name {
+    margin-top: 1rem;
+}
+
+.gender {
+    margin-top: 1.5rem;
+}
+
+.make_flex {
+    padding: 0.5rem;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center; 
+}
+
+.make_flex i {
+    font-size: 1.3rem;
+}
+
+.make_flex input {
+    font-size: 1.3rem;
+}
+
+.make_flex h4 {
+    font-size: 1.3rem;
+}
+
+.State {
+    font-size: 1.3rem;
+    margin-top: -0.1rem;
+    width: 100%;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.linking {
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+.linking a {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    font-weight: 900;
+}
+
+.linking:hover {
+    transform: scale(1.1);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid red;
+}
+
+.language {
+    width: 100%;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background-color: green;
+    border-radius: 2rem;
+    font-weight: 900;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+.language a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.language:hover {
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    form {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .input-name,
+    .gender,
+    .make_flex {
+        flex-direction: column;
+    }
+
+    .make_flex i {
+        font-size: 1.2rem; 
+    }
+
+    .make_flex input {
+        font-size: 1.2rem; 
+    }
+
+    .make_flex h4 {
+        font-size: 1.2rem; 
+    }
+}
