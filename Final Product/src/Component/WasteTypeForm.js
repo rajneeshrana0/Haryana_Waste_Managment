@@ -15,9 +15,11 @@ const WasteTypeForm = () => {
         e.preventDefault();
         // console.log(messageRef.current.value);
         let Data = {
-            message : messageRef.current.value,
-            id:IDRef.current.value,
-        }
+            // Kg : messageRef.current.value,
+            // Count:IDRef.current.value,
+            // checkboxValues: checkbox,
+            inputFieldValues: inputValues,
+          }
 
         try{
             addDoc(ref,Data);

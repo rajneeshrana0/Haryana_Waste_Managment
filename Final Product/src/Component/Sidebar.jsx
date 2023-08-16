@@ -42,7 +42,7 @@ const Sidebar = ({children}) => {
             icon:<FaRecycle/>
         },
         {
-            path:"/services",
+            path:"/ServicesForYou",
             name:"Services For You",
             icon:<FaScrewdriver/>
         },
@@ -66,27 +66,14 @@ const Sidebar = ({children}) => {
             name:"FAQs",
             icon:<FaThList/>
         },
-        {
-            path:"/remarks",
-            name:"Remarks",
-            icon:<FaThList/>
-        },
-        {
-            path:"/changelanguage",
-            name:"Change Language",
-            icon:<FaThList/>
-        },
-        {
-            path:"/logout",
-            name:"Logout",
-            icon:<FaThList/>
-        }
+      
+     
     ]
     return (
         <div className="main_container">
            <div style={{width: isOpen ? "200px" : "50px"}} className="sidebar">
                <div className="top_section">
-                   <h1 style={{display: isOpen ? "block" : "none"}} className="logo">Waste Free Haryana</h1>
+                   {/* <h1 style={{display: isOpen ? "block" : "none"}} className="logo">Waste Free Haryana</h1> */}
                    <div style={{marginLeft: isOpen ? "1rem" : "0px"}} className="bars">
                        <FaBars onClick={toggle}/>
                    </div>

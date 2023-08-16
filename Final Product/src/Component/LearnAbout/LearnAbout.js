@@ -9,28 +9,28 @@ const LearnAbout = () => {
                 <h1>Learn About</h1>
             </div>
             
-            <nav>
+            <div className='wayOfuse'>
                 <ul>
                     <li><Link to="/HowToUse">How to use</Link></li>
-                    <li><a href="user1111.html">User Type</a></li>
+                    <li><Link to="/TypesOfUser">User Type</Link></li>
                     <li><a href="#white-paper">White Paper</a></li>
                 </ul>
-            </nav>
+            </div>
             
-            <section id="how-to-use">
+            <div id="how-to-use">
                 <h2>How to Use ?</h2>
                 <p></p>
-            </section>
+            </div>
             
-            <section id="user-type">
+            <div id="user-type">
                 <h2>User Type</h2>
                 <p>Discover the different user types who benefit from our services.</p>
-            </section>
+            </div>
             
-            <section id="white-paper">
+            <div id="white-paper">
                 <h2>White Paper</h2>
                 <p>Read our comprehensive white paper to learn more about our technology and solutions.</p>
-            </section>
+            </div>
     </div>
   )
 }

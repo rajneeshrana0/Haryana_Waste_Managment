@@ -21,37 +21,48 @@ body, h1, h2, p, ul, li {
     font-size: 70px;
    
 }
-
-nav ul {
+.wayOfuse{
+    border: solid #111;
+    border-width: thin;
+    
+}
+.wayOfuse ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #f4f4f4;
+    background-color: #333;
     padding: 0.5rem 0;
+    color: #ddd ;
 }
 
-nav a {
+
+
+.wayOfuse a {
     text-decoration: none;
-    color: #333;
+    color: #ddd ; 
     padding: 0.5rem 1rem;
 }
 
-nav a:hover {
-    background-color: #ddd;
-}
+.wayOfuse a:hover {
+    background-color: #e6dcdc;
+    color: #111;
+} 
 
-section {
+
+#how-to-use{
+    color: #111;
     padding: 2rem;
     border-bottom: 1px solid #ddd;
 }
-#how-to-use{
-    color: #111;
-}
 #user-type{
 color: #111;
+padding: 2rem;
+border-bottom: 1px solid #ddd;
 }
 #white-paper{
     color: #111;
+    padding: 2rem;
+    border-bottom: 1px solid #ddd;
 
 }
 

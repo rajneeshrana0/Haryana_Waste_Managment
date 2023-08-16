@@ -1,6 +1,11 @@
 .Home{
-    width: 100%;
+    width: 95%;
     height: fit-content;
-    background-color: #fff;
+    /* background-color: #fff; */
     margin-left: 50px;
+    position: absolute;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    
 }

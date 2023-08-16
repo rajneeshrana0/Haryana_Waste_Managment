@@ -3,6 +3,7 @@ import "../index.css";
 import goh_logo from "../Assets/Images/goh-logo.png";
 import satymev from "../Assets/Images/satymev.png";
 import flag from "../Assets/Images/wave_flag.webp";
+import { Link } from "react-router-dom";
 const Navbar=()=>{
     return(
             <>
@@ -35,12 +36,13 @@ const Navbar=()=>{
 {/* <!-- Navigation --> */}
 <header className="navba">
     <div className="links">
-      <a href="#">Home</a>
+      <Link to="/" >Home</Link>
       <a href="#">About</a>
       <a href="#">Vision Mission</a>
       <a href="#">Contact Us</a>
       <a href="#">Help</a>
       <a href="#">FAQ</a>
+      <Link to="/login">Login</Link>
       </div>
       <div className="loginLinks">
         

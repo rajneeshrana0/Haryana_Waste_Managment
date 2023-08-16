@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.certificate {
+  height: 400px;
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.certificate img {
+  height: 100%;
+  max-width: 100%; 
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  flex-wrap: wrap; 
+}
+
+.buttons a {
+  text-align: center;
+  background-color: green;
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 10rem;
+  color: aliceblue;
+  cursor: pointer;
+  margin: 3px 8px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: all 0.4s;
+}
+
+.buttons a:first-child {
+  width: 16rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .certificate {
+      height: auto; 
+  }
+
+  .buttons {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .buttons a {
+      margin: 3px; 
+      width: 80%; 
+  }
+
+  .buttons a:first-child {
+      width: 100%; 
+  }
+}
