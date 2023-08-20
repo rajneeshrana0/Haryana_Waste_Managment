@@ -1,0 +1,26 @@
+.App {
+    text-align: center;
+  }
+  
+  h1{
+    color:White;
+    background-color:  rgb(12, 81, 80);
+    border-radius: 15px;
+  }
+  h4{
+    background-color:white;
+  }
+  .body{
+    background-image: center;
+    color: rgb(14, 11, 11);
+  }
+  .button{
+    border:none;
+    color:white;
+    background-color: blue;
+    font-size: 20px;
+  }
+  form{
+    background-color: white;
+  }
+  

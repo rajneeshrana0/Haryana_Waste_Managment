@@ -1,0 +1,105 @@
+.App {
+    text-align: center;
+  }
+  body{
+    background-color: white;
+  }
+  input{
+    margin: 8px;
+  }
+  legend{
+   background-color: #40F8FF;
+   color: white;
+   padding: 5px 10px;
+  }
+  fieldset{
+    background-color: white;
+  }
+  h1 {
+    text-align: center;
+    color: #614BC3;
+    text-shadow: 2px 2px white;
+  
+  }
+  label {
+     width:200px; 
+     display: inline-block;  
+    /* margin-bottom: 20px; */
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    
+  
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="file"],
+  select,
+  textarea {
+      width: 40%;
+      padding: 10px;
+       margin-bottom: 20px;
+      margin-left:180px;
+      border: 1px solid black;
+      border-radius: 5px;
+      background-color:white;
+      border:2px solid black;
+      margin-left: auto;
+  }
+  ::placeholder{
+      color:black;
+  }
+  
+  textarea {
+      resize: vertical;
+      width:90%;
+  }
+  fieldset{
+    background-color: white;
+  }
+  .container {
+    max-width: 500px;
+    margin-top:40px;
+    margin-left:36%;
+    padding: 20px;
+    background-color: #831bd8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(18, 220, 102, 0.1);
+    font-size: 18px;
+    border:3px solid white;
+  }
+  .head{
+    margin-top:10px;
+    background-color:white;
+    width:80%;
+    border-radius: 20px;
+    
+    
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    
+  
+  }
+  .btn{
+    background-color: #e6e6ff;
+      color: #614BC3;
+      padding-left: 1px;
+      padding-right: 1px;
+      padding-bottom: 1px;
+      font-weight: bold;
+      font-size: 20px;
+      
+      border-radius: 5px;
+      width:20%;
+  
+      
+  
+  }
+  .btn:hover{
+    
+      color:#614BC3;
+      font-weight: bold;
+      border:2px solid black;
+  }
