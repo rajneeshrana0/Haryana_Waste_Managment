@@ -5,7 +5,7 @@ import logo from './logo.png';
 import jsPDF from 'jspdf';
 import {Name} from '../Form/Form'
 const Cert = () => {
-//  console.log(userName);
+
   let name = Name;
     let date = new Date();
     let todayDate = date.getDate()+'/'+(date.getMonth()+1)+'/'+date.getFullYear();
