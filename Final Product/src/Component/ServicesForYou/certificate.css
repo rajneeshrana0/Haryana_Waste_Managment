@@ -1,0 +1,32 @@
+.certificateContainer{
+    margin:50px;
+    
+}
+
+.certificate{
+    text-align: center;
+    border:1px solid black;
+    width:70%;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281) ;
+    margin-top:20px;
+}
+
+.certificate img{
+    width:100px;
+}
+
+.certificateBtn{
+    height: 40px;
+    width:150px;
+    display:block;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281) ;
+    border: none;
+    cursor:pointer;
+}
+.certificateBtn:hover{
+    scale:1.1;
+
+}
