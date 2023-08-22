@@ -102,3 +102,17 @@
       width: 90%;
     }
   }
+
+  .read_btn{
+    width:100px;
+    height: 40px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 5px black;
+    padding-top: 8px;
+    
+  }
+  .read_pledge{
+    font-size: 1rem;
+  }
