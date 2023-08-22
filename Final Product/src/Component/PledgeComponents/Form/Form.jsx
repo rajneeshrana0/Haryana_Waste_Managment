@@ -1,7 +1,8 @@
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 import { Link } from "react-router-dom";
 import "./Form.css";
 const Login = () => {
+
 const [users,setUsers]=useState({
         FirstName:"",
         lastName:"",
@@ -56,9 +57,8 @@ const [users,setUsers]=useState({
 });
 
 
+}
 
-
-    }
 
   return (
   <> 
@@ -236,3 +236,4 @@ const [users,setUsers]=useState({
 } 
 
 export default Login
+// export {userName}

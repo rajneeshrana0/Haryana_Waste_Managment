@@ -14,6 +14,7 @@ import ServicesForYou from "./ServicesForYou/ServicesForYou";
 import MainPage from "./MainPage";
 import Login from "./Login";
 import Signup from "./Signup";
+import Certificate from './ServicesForYou/certificate';
 
 const Home = () => {
   return (
@@ -33,6 +34,7 @@ const Home = () => {
         <Route path="/Home" element={<Home1 />} />
         <Route path="/form" element={<Form />} />
         <Route path="/form/certi" element={<Cert />} />
+        <Route path="/certificate" element={<Certificate/>}/>
 
         <Route path="/ServicesForYou" element={<ServicesForYou />} />
 
