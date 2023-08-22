@@ -42,7 +42,7 @@ export default function Certificate() {
      
     </div>
 
-    <button className='certificateBtn' onClick={generatePDF}>PDF</button>
+    <button className='certificateBtn' onClick={generatePDF}>Download PDF</button>
     </div>
     </>
   )
