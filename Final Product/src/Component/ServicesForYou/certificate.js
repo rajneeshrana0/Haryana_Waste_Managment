@@ -1,14 +1,47 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
 import jsPDF from 'jspdf';
 import './certificate.css';
 import logo from './logoCertificate.png';
-
-
+import { database , firestore } from '../../Backend/firebase';
+import { collection ,query,where ,getDocs} from "firebase/firestore"
 
 export default function Certificate() {
-     
+
+  const userDataRef = collection(firestore,"userData");
+  const [userEmail,setUserEmail] = useState("Set User Email");
+ 
+  useEffect(()=>{
+    // console.log(database.currentUser.email);
+    setUserEmail(database.currentUser.email);
+  })
+
+ 
+console.log(userEmail);
+
+  const q = query(userDataRef,where("Email","==",userEmail));
+
+   const [userName , setUserName] = useState("First Login");
    
-    let name =' Ankit';
+   useEffect( () => {
+     const getUserName = async () => {
+       try{
+
+      const querySnapshot = await getDocs(q);
+      querySnapshot.forEach((doc)=> {
+        // console.log(doc.id," => ",doc.data().name);
+        setUserName(doc.data().name);
+      })
+
+    }catch(err){
+      console.log("Error "+err);
+    }
+    
+  }
+  getUserName();
+} ,)
+// console.log(userName); 
+
+    let name =userName;
     let date = new Date();
     let todayDate = date.getDate()+'/'+(date.getMonth()+1)+'/'+date.getFullYear();
     let generatePDF = () =>{
@@ -22,7 +55,7 @@ export default function Certificate() {
 
   return (
     <>
-    <div class="certificateContainer">
+    <div className="certificateContainer">
      <div className='certificate'>
       <img src={logo}  alt='logo'></img>
       <h1>Certificate of Appreciation</h1>

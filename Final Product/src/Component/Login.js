@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import { database} from "../Backend/firebase";
 import { useNavigate , Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import "./Login&signup.css";
+import {collection,doc,setDoc,query,where,getDocs,getDoc} from 'firebase/firestore'
+import { firestore } from "../Backend/firebase";
+
 
 const Login = () => {
+  
+ 
+  const userRef = collection(firestore,"userData");
+  
   const history = useNavigate();
   const [users, setUsers] = useState({
     email: "",
@@ -46,6 +53,21 @@ const Login = () => {
       }
     );
   };
+
+
+
+  const q1 = query(collection(firestore,"userData"), where (
+    "email","==","sagarpawar@gmail.com"
+  ))
+
+
+  const queryFun = async () => {
+    const querySnapshot = await getDocs(q1);
+    querySnapshot.forEach((doc) => {
+      console.log(doc.data().name);
+    })
+  }
+  queryFun();
   return (
     <>
       <section className="login_container">
