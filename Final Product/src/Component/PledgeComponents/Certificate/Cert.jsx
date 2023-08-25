@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import "./Cert.css";
 import logo from './logo.png';
 import jsPDF from 'jspdf';
-
+import {Name} from '../Form/Form'
 const Cert = () => {
 
-  let name =' Ankit';
+  let name = Name;
     let date = new Date();
     let todayDate = date.getDate()+'/'+(date.getMonth()+1)+'/'+date.getFullYear();
     let generatePDF = () =>{

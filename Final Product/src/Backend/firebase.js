@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import {getFirestore} from "@firebase/firestore";
 import {getAuth} from "firebase/auth";
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyCYXSYobJkFioKuXds7QQNNP_1M_YvE8NQ",
   authDomain: "haryanawastemanagement-63d56.firebaseapp.com",

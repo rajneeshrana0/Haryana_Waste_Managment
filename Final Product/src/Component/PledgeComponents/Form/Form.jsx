@@ -1,8 +1,11 @@
 import React,{useEffect, useState} from 'react';
 import { Link } from "react-router-dom";
 import "./Form.css";
-const Login = () => {
+import { firestore } from '../../../Backend/firebase';
+import {collection,doc,setDoc,query,where,getDocs} from 'firebase/firestore'
 
+ let Name = "First Fill the form";
+const Login = () => {
 const [users,setUsers]=useState({
         FirstName:"",
         lastName:"",
@@ -19,7 +22,22 @@ const [users,setUsers]=useState({
     const getUsersData=(e)=>{
         const {name,value,type,checked}=e.target;
         setUsers({...users,[name]:type === "checkbox" ? checked : value});
+
+       
     }
+
+    // console.log(users.FirstName);
+    //  const userDataRef = collection(firestore,"userData");
+
+    // const addUserData = async () => {
+    //     await setDoc(doc(userDataRef,"userEmail"),{
+    //         name : users.FirstName+" "+lastName,
+
+    //     })
+
+    // }
+  
+    
     const postData=async(e)=>{
         e.preventDefault();
 
@@ -56,9 +74,10 @@ const [users,setUsers]=useState({
     }),
 });
 
+let CertName = users.FirstName+" "+lastName;
+findUserName(CertName);
 
 }
-
 
   return (
   <> 
@@ -235,5 +254,9 @@ const [users,setUsers]=useState({
   )
 } 
 
+let findUserName = (name) =>{
+   Name = name;
+   return Name;
+}
+export {Name}
 export default Login
-// export {userName}

@@ -3,7 +3,7 @@ import { firestore } from "../Backend/firebase";
 import { useNavigate ,Link} from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import "./Login&signup.css";
-// import firestore from  "../Backend/firebase"
+
 
 const Signup = () => {
   const history = useNavigate();
